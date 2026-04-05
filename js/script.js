@@ -90,6 +90,16 @@ window.onload = () => {
 
 };
 
+function forgotPassword(){
+  let user = prompt("Enter your Email / User ID:");
+
+  if(user){
+    alert("Password reset link has been sent to " + user);
+  } else {
+    alert("Please enter a valid Email / User ID");
+  }
+}
+
 
 function registerUser(){
 
