@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Receiver Dashboard</title>
+
+<link rel="stylesheet" href="css/style.css">
+<script defer src="js/script.js"></script>
+
+</head>
+
+<body>
+
+<div class="mobile">
+
+<!-- 🔝 TOP BAR -->
+<div class="topbar">
+  <div class="icon" onclick="goToReceiverProfile()">👤</div>
+  <div class="icon" onclick="goToReceiverNotifications()">🔔</div>
+</div>
+
+<h2>Receiver Dashboard</h2>
+
+<!-- 📦 ACTIVE DONATION -->
+<div class="card clickable" onclick="toggleReceiverDonation()">
+
+  <div class="row">
+    <p>Donation Available</p>
+    <div class="dot green"></div>
+  </div>
+
+</div>
+
+<!-- 🔽 EXPANDABLE DETAILS -->
+<div id="receiverDonationDetails" class="card hidden">
+
+  <p><b>Org:</b> ABC Hotel</p>
+  <p><b>Donor:</b> XYZ Restaurant</p>
+  <p><b>Status:</b> Available</p>
+  <p><b>Tier:</b> High Priority</p>
+  <p><b>Tracking:</b> Live</p>
+
+<p><b>Cooked Time:</b> <span id="cookedTime">2:00 PM</span></p>
+<p><b>Expiry Time:</b> <span id="expiryTime">6:00 PM</span></p>
+<p><b>Time Left:</b> <span id="timer">--:--:--</span></p>
+
+  <div class="qr">QR</div>
+
+</div>
+
+<!-- ⬇️ BOTTOM NAV -->
+<div class="bottom-nav two-nav">
+
+  <button onclick="goToHistory()">
+    📜
+    <span>History</span>
+  </button>
+
+  <button onclick="raiseRequest()">
+    ✋
+    <span>Raise Hand</span>
+  </button>
+
+</div>
+
+</div>
+
+</body>
+</html>

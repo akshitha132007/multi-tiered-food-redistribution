@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Storage On Spot</title>
+
+<link rel="stylesheet" href="css/style.css">
+<script defer src="js/script.js"></script>
+
+</head>
+
+<body>
+
+<div class="mobile">
+
+<h2>Storage On Spot</h2>
+
+<div class="card">
+
+<!-- 📦 ITEM 1 -->
+<div class="donation-item clickable" onclick="toggleStorageItem('item1')">
+  <p><b>Donation ID:</b> D001</p>
+  <p>ABC Hotel</p>
+</div>
+
+<div id="item1" class="card hidden">
+  <p><b>Donor:</b> ABC Hotel</p>
+  <p><b>User ID:</b> donor123</p>
+  <p><b>Food:</b> Rice & Curry</p>
+  <p><b>Quantity:</b> 30 kg</p>
+  <button class="main-btn" onclick="schedulePickup()">Schedule Pickup</button>
+</div>
+
+<!-- 📦 ITEM 2 -->
+<div class="donation-item clickable" onclick="toggleStorageItem('item2')">
+  <p><b>Donation ID:</b> D002</p>
+  <p>XYZ Restaurant</p>
+</div>
+
+<div id="item2" class="card hidden">
+  <p><b>Donor:</b> XYZ Restaurant</p>
+  <p><b>User ID:</b> donor456</p>
+  <p><b>Food:</b> Bakery Items</p>
+  <p><b>Quantity:</b> 20 kg</p>
+  <button class="main-btn" onclick="schedulePickup()">Schedule Pickup</button>
+</div>
+
+<!-- 📦 ITEM 3 -->
+<div class="donation-item clickable" onclick="toggleStorageItem('item3')">
+  <p><b>Donation ID:</b> D003</p>
+  <p>Fresh Mart</p>
+</div>
+
+<div id="item3" class="card hidden">
+  <p><b>Donor:</b> Fresh Mart</p>
+  <p><b>User ID:</b> donor789</p>
+  <p><b>Food:</b> Vegetables</p>
+  <p><b>Quantity:</b> 25 kg</p>
+  <button class="main-btn" onclick="schedulePickup()">Schedule Pickup</button>
+</div>
+
+<div class="card">
+
+  <h4>Total Storage</h4>
+  <p class="info-text"><b>Net Quantity:</b> <span id="netQty">75 kg</span></p>
+
+</div>
+
+<button class="main-btn pickup-global" onclick="schedulePickupAll()">
+  Schedule Pickup
+</button>
+
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FoodConnect Register</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<script defer src="js/script.js"></script>
+
+</head>
+
+<body>
+
+<div class="mobile">
+
+<div class="card">
+
+<h2>Create Account</h2>
+
+<select id="role" onchange="updateSubrole()">
+
+<option disabled selected>Select Role</option>
+
+<option value="donor">Donor</option>
+
+<option value="receiver">Receiver</option>
+
+<option value="industries">Industries</option>
+
+</select>
+
+<select id="subrole">
+
+<option disabled selected>Select Subrole</option>
+
+</select>
+
+<input type="text" placeholder="Organization Name">
+
+<input type="text" placeholder="Create User ID">
+
+<!-- ADD ADDRESS TEXT -->
+
+<p id="addAddressText" class="add-address" onclick="toggleAddress()">
+ Add Address
+</p>
+
+<!-- ADDRESS BOX -->
+
+<div id="addressBox" class="hidden">
+
+<div class="row">
+<input placeholder="Flat No">
+<input placeholder="Locality">
+</div>
+
+<div class="row">
+<input placeholder="City">
+<input placeholder="Landmark">
+</div>
+
+<div class="row">
+<input placeholder="District">
+<input placeholder="Pincode">
+</div>
+
+<input placeholder="State">
+
+</div>
+
+<input placeholder="Year of Establishment">
+
+<div class="row">
+<input placeholder="Email">
+<input placeholder="Phone Number">
+</div>
+
+<input type="password" placeholder="Create Password">
+
+<label class="upload">
+Upload Photo
+<input type="file">
+</label>
+
+<!-- RECEIVER EXTRA FIELDS -->
+
+<div id="receiverFields" class="hidden">
+
+<input placeholder="Types of People">
+
+<input placeholder="Count of People">
+
+</div>
+
+<button class="main-btn" onclick="registerUser()">Register</button>
+
+<p class="switch">
+
+Already have account? 
+
+<a href="login.html">Login</a>
+
+</p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Industry Dashboard</title>
+
+<link rel="stylesheet" href="css/style.css">
+<script defer src="js/script.js"></script>
+
+</head>
+
+<body>
+
+<div class="mobile">
+
+<!-- 🔝 TOP BAR -->
+<div class="topbar">
+  <div class="icon" onclick="goToIndustryProfile()">👤</div>
+  <div class="icon" onclick="goToIndustryNotifications()">🔔</div>
+</div>
+
+<h2>Industry Dashboard</h2>
+
+<!-- 📦 STORAGE CARD -->
+<div class="card clickable" onclick="goToStorageSpot()">
+
+  <div class="row">
+    <p>Storage On Spot</p>
+    <div class="dot green"></div>
+  </div>
+
+</div>
+
+<!-- ⬇️ BOTTOM NAV -->
+<div class="bottom-nav two-nav">
+
+  <!-- HISTORY -->
+  <button onclick="goToIndustryHistory()">
+    📜
+    <span>History</span>
+  </button>
+
+  <!-- PICKUP ALERT -->
+  <button onclick="checkPickup()">
+    <div class="pickup-box">
+      <div id="pickupDot" class="dot red"></div>
+      <span>Pickup Alert</span>
+    </div>
+  </button>
+
+</div>
+
+</div>
+
+</body>
+</html>

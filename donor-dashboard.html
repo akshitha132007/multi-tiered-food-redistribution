@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donor Dashboard</title>
+
+<link rel="stylesheet" href="css/style.css">
+<script defer src="js/script.js"></script>
+
+</head>
+
+<body>
+
+<div class="mobile">
+
+<!-- 🔝 TOP BAR -->
+<div class="topbar">
+  <div class="icon" onclick="goToProfile()">👤</div>
+  <div class="icon" onclick="goToNotifications()">🔔</div>
+</div>
+
+<h2>Donor Dashboard</h2>
+
+<!-- 📦 ACTIVE DONATION CARD -->
+<div class="card clickable" onclick="toggleDonation()">
+
+  <div class="row space-between">
+    <p>Active Donation</p>
+
+    <!-- STATUS DOT -->
+    <div class="dot green"></div>
+  </div>
+
+</div>
+
+<!-- 🔽 EXPANDABLE DETAILS -->
+<div id="donationDetails" class="card hidden">
+
+  <p><b>Organization:</b> ABC Hotel</p>
+  <p><b>Donor:</b> You</p>
+  <p><b>Status:</b> Active</p>
+  <p><b>Tier:</b> High Priority</p>
+  <p><b>Tracking:</b> Live</p>
+
+<p><b>Cooked Time:</b> <span id="cookedTime">2:00 PM</span></p>
+<p><b>Expiry Time:</b> <span id="expiryTime">6:00 PM</span></p>
+<p><b>Time Left:</b> <span id="timer">--:--:--</span></p>
+
+  <!-- QR PLACEHOLDER -->
+  <div class="qr">QR</div>
+
+</div>
+
+<!-- ⬇️ BOTTOM NAV -->
+<div class="bottom-nav">
+
+  <button onclick="goToPast()">
+    📜
+    <span>Past</span>
+  </button>
+
+  <button onclick="goToCreateDonation()" class="center-icon">
+  ➕
+  <span>Add</span>
+</button>
+
+  <button onclick="goToTrust()">
+    ⭐
+    <span>Trust</span>
+  </button>
+
+</div>
+
+</div>
+
+</body>
+</html>
